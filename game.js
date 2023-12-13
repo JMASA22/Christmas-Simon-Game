@@ -1,5 +1,6 @@
 // 1.3. Comprovar q està ben vinculat js
 //alert ("Funciona");
+debugger;
 
 // 2.3. Crear llista (array) de colors 
 var botoColors = ["red", "blue", "green", "yellow"]; // buttonColours
@@ -15,11 +16,11 @@ var started = false;
 // 7.2. Crear nova variable "Nivell"
 var nivell = 0;
 
-// 7.1. Utilitzar jQuery per detectar q hem clicat una tecla, quan pasi per 1er cop cal cridar la funcio "nextSequencia"
+// 7.1. Utilitzar jQuery per detectar q hem clicat una tecla, quan passi per 1er cop cal cridar la funció "nextSequencia"
 $(document).keypress(function (){ // keypress o keydown?
     if (!started){
         // 7.3. h1 inicial "Prem una Tecla per Començar" quan comenci el joc canviar a "Nivell 0".
-        $ ("#titol-nivell").text ("Nivell " + nivell);
+        $("#titol-nivell").text("Nivell " + nivell);
         nextSequencia ();
         started = true;
     }
@@ -80,12 +81,12 @@ function resposta (actualNivell){
     }
 }
 
-function respostaMalamnet (){
+/*function respostaMalament (){
     if (patroJoc[actualNivell] != usuariClicksPatro[actualNivell]) {
 
     }
     //$ ("#" + araColor).addClass("pressed");
-}
+}*/
 
 // 2.1. Creem nova funció q es dirà "nextSequencia"
 function nextSequencia() {
@@ -96,8 +97,8 @@ function nextSequencia() {
     // 7.4. Incrementem un nivell per cada nova seqüència
     nivell++;
 
-    // 7.5. Apliquem modificació de text a h1 per cada nivell de més
-    $("titol-nivell").text("Nivell " + nivell);
+    // 7.5. Apliquem modificació de text a h1 per cada nivell de més:
+    $("#titol-nivell").text("Nivell " + nivell);
 
     // 2.2. dins de la funció generem un número randoom entre 0-3 i l'emmagatzamen en una variable (var)
     var randomNum = Math.floor(Math.random()*4); //"Math.floor(Math.random() * 4);" -> posar això a la consola de chrome per veure si funciona
@@ -139,7 +140,7 @@ function animacioPress (araColor){
 function tornarComencar (){
     
     //10.3. Resetejar valors del "patroJoc" i de les variables
-    level = 0;
+    nivell = 0;
     patroJoc = [];
     started = false;
 }
