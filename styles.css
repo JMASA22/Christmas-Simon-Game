@@ -1,13 +1,13 @@
 body {
   text-align: center;
-  background-color: #011F3F;
+  background-color: #f5e610;
 }
 
 #titol-nivell {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
+  font-family: 'M PLUS Code Latin', cursive;
+  font-size: 5rem;
   margin:  5%;
-  color: #FEF2BF;
+  color: #3923ff;
 }
 
 .container {
@@ -22,7 +22,7 @@ body {
   display: inline-block;
   height: 200px;
   width: 200px;
-  border: 10px solid black;
+  border: 10px solid #3923ff;;
   border-radius: 20%;
 }
 
@@ -32,19 +32,19 @@ body {
 }
 
 .red {
-  background-color: red;
+  background-color: rgb(242, 0, 255);
 }
 
 .green {
-  background-color: green;
+  background-color: rgb(18, 224, 18);
 }
 
 .blue {
-  background-color: blue;
+  background-color: rgb(0, 255, 234);
 }
 
 .yellow {
-  background-color: yellow;
+  background-color: rgb(255, 145, 0);
 }
 
 .pressed {

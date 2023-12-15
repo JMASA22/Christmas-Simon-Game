@@ -71,7 +71,7 @@ function resposta (actualNivell){
         $("body").addClass("game-over");
         setTimeout(function () {
         $("body").removeClass("game-over");
-        }, 200);
+        }, 1000);
 
         //9.3. canvia el text h1 per dir "Joc Finalitzat, Prem una Tecla per Tornar a Començar" si l'usuari s'qeuivoca.
         $("#titol-nivell").text("Joc Finalitzat, Prem una Tecla per Tornar a Començar");
