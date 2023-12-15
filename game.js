@@ -3,7 +3,7 @@
 debugger;
 
 // 2.3. Crear llista (array) de colors 
-var botoColors = ["red", "blue", "green", "yellow"]; // buttonColours
+var botoColors = ["santa", "cervol", "arbre", "galeta"]; // buttonColours
 
 // 2.5. Crear nova llista buida "patroJoc"
 var patroJoc = []; // gamePattern
@@ -17,7 +17,7 @@ var started = false;
 var nivell = 0;
 
 // 7.1. Utilitzar jQuery per detectar q hem clicat una tecla, quan passi per 1er cop cal cridar la funció "nextSequencia"
-$(document).keypress(function (){ // keypress o keydown?
+$(document).keydown(function (){ // keypress o keydown?
     if (!started){
         // 7.3. h1 inicial "Prem una Tecla per Començar" quan comenci el joc canviar a "Nivell 0".
         $("#titol-nivell").text("Nivell " + nivell);
@@ -74,7 +74,7 @@ function resposta (actualNivell){
         }, 1000);
 
         //9.3. canvia el text h1 per dir "Joc Finalitzat, Prem una Tecla per Tornar a Començar" si l'usuari s'qeuivoca.
-        $("#titol-nivell").text("Joc Finalitzat, Prem una Tecla per Tornar a Començar");
+        $("#titol-nivell").text("Joc Finalitzat! Prem una tecla per tornar a començar");
 
         //10.2. crida tornarComencar() si l'usuari s'qeuivoca.
         tornarComencar();

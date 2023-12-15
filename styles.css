@@ -1,20 +1,38 @@
 body {
   text-align: center;
-  background-color: #f5e610;
+  background-color: #2bc347;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #1b6110,#2bc347, #e61212, #2bc347);
+  background-size: 150% 180%;
+  animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 80% 70%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 #titol-nivell {
   font-family: 'M PLUS Code Latin', cursive;
-  font-size: 5rem;
+  font-size: 4rem;
   margin:  5%;
-  color: #3923ff;
+  color: #ffecec;
 }
 
 .container {
   display: block;
   width: 50%;
   margin: auto;
-
+  object-fit: cover;
 }
 
 .btn {
@@ -22,29 +40,32 @@ body {
   display: inline-block;
   height: 200px;
   width: 200px;
-  border: 10px solid #3923ff;;
+  border: 10px solid #e61212;
   border-radius: 20%;
 }
 
 .game-over {
-  background-color: red;
+  background-color: rgb(61, 8, 8);
   opacity: 0.8;
 }
-
-.red {
-  background-color: rgb(242, 0, 255);
+.row{
+  object-fit: cover;
 }
 
-.green {
-  background-color: rgb(18, 224, 18);
+.cervol {
+  background-image: url('./img/cervol.jpg');
 }
 
-.blue {
-  background-color: rgb(0, 255, 234);
+.santa {
+  background-image: url('./img/santa.jpg');
 }
 
-.yellow {
-  background-color: rgb(255, 145, 0);
+.galetes {
+  background-image: url('./img/galetes.jpg');
+}
+
+.arbre {
+  background-image: url('./img/arbre.jpg');
 }
 
 .pressed {
