@@ -67,11 +67,11 @@ function resposta (actualNivell){
         // 9.1. play so "malament.mp3"
         playSo("malament");
         
-        //9.2. a l'arxiu styles.css, hi h ala classe "game-over", aplica-la quan l'usiari s'equivoqui i para-la quan hagis passat 200 milisegons
-        $("body").addClass("game-over");
+        //9.2. a l'arxiu styles.css, hi h ala classe "gameOver", aplica-la quan l'usiari s'equivoqui i para-la quan hagis passat 200 milisegons
+        $("body").addClass("gameOver");
         setTimeout(function () {
-        $("body").removeClass("game-over");
-        }, 1000);
+        $("body").removeClass("gameOver");
+        }, 1200);
 
         //9.3. canvia el text h1 per dir "Joc Finalitzat, Prem una Tecla per Tornar a Començar" si l'usuari s'qeuivoca.
         $("#titol-nivell").text("Joc Finalitzat! Prem una tecla per tornar a començar");
@@ -136,7 +136,7 @@ function animacioPress (araColor){
     }, 100);
 }
 
-//10.1. Crear nova funcio "tornarComencar"
+//10.1. Crear nova funció "tornarComencar"
 function tornarComencar (){
     
     //10.3. Resetejar valors del "patroJoc" i de les variables

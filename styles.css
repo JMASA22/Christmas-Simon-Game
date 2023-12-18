@@ -1,24 +1,7 @@
 body {
   text-align: center;
-  background-color: #2bc347;
-}
-
-.gradient-background {
-  background: linear-gradient(300deg, #1b6110,#2bc347, #e61212, #2bc347);
-  background-size: 150% 180%;
-  animation: gradient-animation 10s ease infinite;
-}
-
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 80% 70%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  /* background-image: linear-gradient(to bottom, #ff0000, #00ff00, #ff0000);*/
+  background-color: #2a9d2a;
 }
 
 #titol-nivell {
@@ -44,10 +27,31 @@ body {
   border-radius: 20%;
 }
 
-.game-over {
+.gameOver {
   background-color: rgb(61, 8, 8);
   opacity: 0.8;
 }
+
+/*
+.gradientBackground {
+  background: linear-gradient(300deg, #1b6110,#2bc347, #e61212, #2bc347);
+  background-size: 150% 180%;
+  animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 80% 70%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+*/
+
 .row{
   object-fit: cover;
 }
